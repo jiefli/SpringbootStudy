@@ -1,3 +1,6 @@
 server:
   servlet:
-    context-path: /springbootStudy
+    context-path: /community
+spring:
+  resources:
+    static-locations: classpath:/templates/, classpath:/static/
