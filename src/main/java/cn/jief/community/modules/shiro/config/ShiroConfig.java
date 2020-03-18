@@ -31,7 +31,7 @@ public class ShiroConfig {
 
         //添加过滤器，实现权限拦截
         Map<String,String> filterMap = new HashMap<>();
-        filterMap.put("/add", "authc");
+        filterMap.put("/user/**", "authc");
         factoryBean.setFilterChainDefinitionMap(filterMap);
         //过滤器end
         //设置拦截跳转页
